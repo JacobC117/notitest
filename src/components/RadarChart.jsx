@@ -11,7 +11,7 @@ function RadarChart() {
   };
 
   return (
-    <div>
+    <div style={{width:'100%', height:'90vh'}}>
       <p>Sending notification every 10 seconds!</p>
     </div>
   );
