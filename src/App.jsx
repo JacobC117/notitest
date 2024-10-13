@@ -32,7 +32,6 @@ return (
     <Route path = "/bullmonitor" element={<BullChart/>}/>
     <Route path = "/incidentlog" element={<SecureForm/>}/>
     <Route path = "/Radar" element={<RadarChart/>}/>
-
     </Routes>
   </Router>
 );
