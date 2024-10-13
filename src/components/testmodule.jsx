@@ -9,7 +9,7 @@ function testmodule() {
   };
 
   return (
-    <div>
+    <div style={{width:'100%', height:'90vh'}}>
       <button onClick={sendMessage}>Test</button>
     </div>
   );
