@@ -1,17 +1,12 @@
-import { useState, useEffect } from "react"
-import io from 'socket.io-client'
-const socket = io.connect("http://localhost:3002")
+import testmodule from "./components/testmodule";
 
 function App() {
 
-  const sendMessage = () => {
-    socket.emit("send_message", {message: "I am a module!"})
-  };
-
   return (
-    <div>
-      <button onClick={sendMessage}>Test</button>
-    </div>
+    <Router>
+      <Route path="/testmodule" element={<testmodule />}/>
+    </Router>
+
   );
 }
 
