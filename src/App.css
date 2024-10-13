@@ -1,0 +1,64 @@
+#root {
+
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+
+  text-align: center;
+  background-color: white;
+  color: black;
+  overflow:visible;
+}
+
+table.CustTable, th.CustTable, td.CustTable {
+  border: 1px solid;
+  border-color: #FECACA;
+  font-size: 4.5vh;
+}
+.CustTable tr:nth-child(even) {
+  background-color: #FECACA;
+}
+tr.CustTable:nth-child(odd) {
+  background-color: #FECACA;
+}
+table.PloTable, th.PloTable, td.PloTable {
+  border: 1px solid;
+  border-color: #E9D5FF;
+  font-size: 4.5vh;
+}
+tr:nth-child(even) {
+  background-color: #E9D5FF;
+}
+
+tr:nth-child(odd) {
+  background-color: #E2E8F0;
+}
+table.SecurTable, th.SecurTable, td.SecurTable{
+  border: 1px solid;
+  border-color: #FECACA;
+  font-size: 4.5vh;
+}
+.SecurTable tr:nth-child(even) {
+  background-color: #BBF7D0;
+}
+.SecurTable tr:nth-child(odd) {
+  background-color: #FECACA;
+}
+select{
+  width:90%;
+  height:10vh;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
+  text-align: center;
+}
+input{
+  width:90%;
+  height:10vh;
+
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
+  text-align: center;
+}
