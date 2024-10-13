@@ -33,6 +33,7 @@ return (
     <Route path = "/bullmonitor" element={<BullChart/>}/>
     <Route path = "/incidentlog" element={<SecureForm/>}/>
     <Route path = "/Radar" element={<RadarChart/>}/>
+    <Route path = "/test" element={<testmodule/>}/>
     </Routes>
   </Router>
 );
