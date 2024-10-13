@@ -12,6 +12,7 @@ import StreamChart from './components/StreamChart';
 import BullChart from './components/BullChart';
 import SecureForm from './components/SecureForm';
 import RadarChart from './components/RadarChart';
+import testmodule from './components/testmodule';
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -32,6 +33,7 @@ return (
     <Route path = "/bullmonitor" element={<BullChart/>}/>
     <Route path = "/incidentlog" element={<SecureForm/>}/>
     <Route path = "/Radar" element={<RadarChart/>}/>
+    <Route path = "/test" element={<testmodule/>}/>
     </Routes>
   </Router>
 );
