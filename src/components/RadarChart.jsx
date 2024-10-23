@@ -16,7 +16,7 @@ function RadarChart() {
     
   return (
     <div style={{width:'100%', height:'90vh'}}>
-      <input onChange={handleInput} value={message}></input>
+      <input onChange={handleInput} value={message} className="w-50"></input>
       <button onClick={send}>Send Notification</button>
     </div>
   );
