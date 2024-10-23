@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
 import io from 'socket.io-client'
-const socket = io.connect("http://localhost:3002")
+//const socket = io.connect("http://localhost:3002")
 
 function RadarChart() {
 
   const [message, setMessage] = useState('');
 
   const send = () => {
-    socket.emit("send_message", {message: message})
+    //socket.emit("send_message", {message: message})
   }
 
   const handleInput = (e) => {
