@@ -4,15 +4,20 @@ const socket = io.connect("http://localhost:3002")
 
 function RadarChart() {
 
-  useEffect(() => {
-    socket.emit("send_message", {message: "I am a module!"})
-  }, [])
+  const [message, setMessage] = useState('');
 
-  
+  const send = () => {
+    socket.emit("send_message", {message: message})
+  }
 
+  const handleInput = (e) => {
+    setMessage(e.target.value)
+  }
+    
   return (
     <div style={{width:'100%', height:'90vh'}}>
-      <p>Sending notification every 10 seconds!</p>
+      <input onChange={handleInput} value={message}></input>
+      <button onClick={send}>Send Notification</button>
     </div>
   );
 }
